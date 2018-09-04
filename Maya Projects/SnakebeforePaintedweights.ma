@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
-//Name: Snake.ma
-//Last modified: Mon, Sep 03, 2018 07:24:40 PM
+//Name: SnakebeforePaintedweights.ma
+//Last modified: Mon, Sep 03, 2018 07:24:53 PM
 //Codeset: 1252
 requires maya "2018ff09";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "41BA9283-4821-D030-4DB9-8D83AA0E0295";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 32.547014863517191 10.348348212761556 -15.705420362598119 ;
-	setAttr ".r" -type "double3" 344.66164727663431 2274.5999999997189 0 ;
+	setAttr ".t" -type "double3" 14.867574641151126 16.122894341326059 -31.530549801006394 ;
+	setAttr ".r" -type "double3" 335.66164727682082 2312.1999999995705 0 ;
 	setAttr ".rp" -type "double3" 0 -2.2204460492503131e-16 0 ;
 	setAttr ".rpt" -type "double3" -4.2910608468511069e-15 7.0419517767763077e-15 5.0452273089052428e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -11603,4 +11603,4 @@ connectAttr "pCubeShape9.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape10.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape11.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape12.iog" ":initialShadingGroup.dsm" -na;
-// End of Snake.ma
+// End of SnakebeforePaintedweights.ma
