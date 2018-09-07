@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
 //Name: Airplane.ma
-//Last modified: Fri, Sep 07, 2018 04:06:00 AM
+//Last modified: Fri, Sep 07, 2018 04:08:42 AM
 //Codeset: 1252
 requires maya "2018ff09";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "A8E6B670-4B6A-5D64-1914-968153D67CF7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -27.652245410059152 28.138240694210189 -2.2440100163100722 ;
-	setAttr ".r" -type "double3" -38.338364292241373 -1914.7966371520981 0 ;
+	setAttr ".t" -type "double3" -33.390658031387552 19.623609849043582 23.456525284909095 ;
+	setAttr ".r" -type "double3" -23.938364292237988 -1869.596637151833 -4.5615430656164567e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "4A0CE3F7-439D-7706-A4A4-F09CDCDFB903";
 	setAttr -k off ".v" no;
