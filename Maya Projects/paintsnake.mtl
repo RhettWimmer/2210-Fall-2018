@@ -1,0 +1,87 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.197435470)
+
+newmtl tires
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Wheelcovers
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Legs
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Sheild1
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl lambert1
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl lambert11
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl ball
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Tail
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl lambert5
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl lambert13
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl lambert9
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl gauges1
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl lambert19
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl lambert15
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl pasted__lambert2
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl pasted__Body
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl pasted__Face
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl chair
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl bendy_thing
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl nose
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Flappers
+kd 0.5 0.5 0.5
+illum 1
+
