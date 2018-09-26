@@ -32,6 +32,10 @@ ExportedObj/
 #Photoshop
 
 *.psd
+
+#Targa
+
+*.tga
  
 
 # Unity3D generated meta files
