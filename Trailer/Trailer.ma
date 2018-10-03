@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Trailer.ma
-//Last modified: Wed, Oct 03, 2018 12:56:43 PM
+//Last modified: Wed, Oct 03, 2018 01:04:53 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,16 +13,17 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "1310E6D4-46A0-E211-1DA2-B59EFFD63A67";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -27.784266779278575 53.935657769651826 0.67903285403043512 ;
-	setAttr ".r" -type "double3" -62.738352729591114 271.39999999998872 -1.3017892476131035e-13 ;
+	setAttr ".t" -type "double3" -2.7455916878978712 10.842067605509445 52.389010286145137 ;
+	setAttr ".r" -type "double3" -3.938352730543353 -362.99999999995094 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "62A3E1FB-4D66-0BF9-0C3E-95BA7B9B694A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 60.675215245797233;
+	setAttr ".coi" 52.585084383835074;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
+	setAttr ".tp" -type "double3" 0 7.2303606438498651 0 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -77,18 +78,47 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "pCube1";
 	rename -uid "DF1E6497-44CE-68C7-79C2-7D98C5DF5F54";
-	setAttr ".t" -type "double3" 0 6.2413798999224497 0 ;
-	setAttr ".s" -type "double3" 29.05833559062485 10.009002348117797 12.309517602518335 ;
+	setAttr ".t" -type "double3" 0 7.2303606438498651 0 ;
+	setAttr ".s" -type "double3" 29.05833559062485 11.33169469886688 12.309517602518335 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
 	rename -uid "84771CA9-4690-F1F6-3A91-ACBDC1FD120D";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 128 ".pt[0:127]" -type "float3"  0.051111318 0 0 -0.051111318 
+		0 0 0.051111318 0.0030222472 0 -0.051111318 0.0030222472 0 0.051111318 0.0030222472 
+		0 -0.051111318 0.0030222472 0 0.051111318 0 0 -0.051111318 0 0 0.00984821 -3.7252903e-09 
+		0 0.00984821 0 0 -0.00984821 0 0 -0.00984821 -3.7252903e-09 0 -0.021482822 -3.7252903e-09 
+		0 -0.021482822 0 0 0.021482822 0 0 0.021482822 -3.7252903e-09 0 -0.039238594 -3.7252903e-09 
+		0 -0.039238594 0 0 0.039238594 0 0 0.039238594 -3.7252903e-09 0 -0.039238594 -3.7252903e-09 
+		0 -0.039238594 0 0 0.039238594 0 0 0.039238594 -3.7252903e-09 0 -0.021482822 -3.7252903e-09 
+		0 -0.021482822 0 0 0.021482822 0 0 0.021482822 -3.7252903e-09 0 0.00984821 -3.7252903e-09 
+		0 0.00984821 0 0 -0.00984821 0 0 -0.00984821 -3.7252903e-09 0 -0.043888368 0 0 0.043888368 
+		0 0 0.0026252635 0 0 -0.028705761 0 0 -0.046461537 0 0 -0.046461537 0 0 -0.028705761 
+		0 0 0.0026252635 0 0 0.043888368 0 0 -0.043888368 0 0 -0.0026252635 0 0 0.028705761 
+		0 0 0.046461537 0 0 0.046461537 0 0 0.028705761 0 0 -0.0026252635 0 0 -0.04013551 
+		0 0 0.04013551 0 0 -0.0011275965 0 0 -0.032458615 0 0 -0.050214387 0 0 -0.050214387 
+		0 0 -0.032458615 0 0 -0.0011275965 0 0 0.04013551 0 0 -0.04013551 0 0 0.0011275965 
+		0 0 0.032458615 0 0 0.050214387 0 0 0.050214387 0 0 0.032458615 0 0 0.0011275965 
+		0 0 -0.037859023 0 0 0.037859023 0 0 -0.0034040892 0 0 -0.03473511 0 0 -0.052490883 
+		0 0 -0.052490883 0 0 -0.03473511 0 0 -0.0034040892 0 0 0.037859023 0 0 -0.037859023 
+		0 0 0.0034040892 0 0 0.03473511 0 0 0.052490883 0 0 0.052490883 0 0 0.03473511 0 
+		0 0.0034040892 0 0 -0.037859023 0 0 0.037859023 0 0 -0.0034040892 0 0 -0.03473511 
+		0 0 -0.052490883 0 0 -0.052490883 0 0 -0.03473511 0 0 -0.0034040892 0 0 0.037859023 
+		0 0 -0.037859023 0 0 0.0034040892 0 0 0.03473511 0 0 0.052490883 0 0 0.052490883 
+		0 0 0.03473511 0 0 0.0034040892 0 0 -0.04013551 0 0 0.04013551 0 0 -0.0011275965 
+		0 0 -0.032458615 0 0 -0.050214387 0 0 -0.050214387 0 0 -0.032458615 0 0 -0.0011275965 
+		0 0 0.04013551 0 0 -0.04013551 0 0 0.0011275965 0 0 0.032458615 0 0 0.050214387 0 
+		0 0.050214387 0 0 0.032458615 0 0 0.0011275965 0 0 -0.043888368 0 0 0.043888368 0 
+		0 0.0026252635 0 0 -0.028705761 0 0 -0.046461537 0 0 -0.046461537 0 0 -0.028705761 
+		0 0 0.0026252635 0 0 0.043888368 0 0 -0.043888368 0 0 -0.0026252635 0 0 0.028705761 
+		0 0 0.046461537 0 0 0.046461537 0 0 0.028705761 0 0 -0.0026252635 0 0;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "BCBA3470-433B-4789-FE41-62B589552B20";
@@ -156,6 +186,42 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "C130FDA3-4AC5-52D3-FE69-499324513DFD";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode polySplitRing -n "polySplitRing1";
+	rename -uid "3E122E8E-49C8-AB7C-15EB-90929A27C64C";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 2 "e[6:7]" "e[10:11]";
+	setAttr ".ix" -type "matrix" 29.05833559062485 0 0 0 0 11.33169469886688 0 0 0 0 12.309517602518335 0
+		 0 7.2303606438498651 0 1;
+	setAttr ".wt" 0.66717743873596191;
+	setAttr ".dr" no;
+	setAttr ".re" 6;
+	setAttr ".sma" 29.999999999999996;
+	setAttr ".stp" 2;
+	setAttr ".div" 6;
+	setAttr ".p[0]"  0 0 1;
+	setAttr ".fq" yes;
+createNode polySplitRing -n "polySplitRing2";
+	rename -uid "BEF1FDE1-4700-E95C-6C6C-F98FBAE8912F";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 14 "e[4:5]" "e[8:9]" "e[14]" "e[18]" "e[22]" "e[26]" "e[30]" "e[34]" "e[38]" "e[42]" "e[46]" "e[50]" "e[54]" "e[58]";
+	setAttr ".ix" -type "matrix" 29.05833559062485 0 0 0 0 11.33169469886688 0 0 0 0 12.309517602518335 0
+		 0 7.2303606438498651 0 1;
+	setAttr ".wt" 0.38957494497299194;
+	setAttr ".re" 5;
+	setAttr ".sma" 29.999999999999996;
+	setAttr ".stp" 2;
+	setAttr ".div" 6;
+	setAttr ".p[0]"  0 0 1;
+	setAttr ".fq" yes;
+createNode polyTweak -n "polyTweak1";
+	rename -uid "D7CCB3A6-49B7-EF3A-FDCD-78939E75500E";
+	setAttr ".uopa" yes;
+	setAttr -s 24 ".tk[8:31]" -type "float3"  0 0.057057716 0 0 3.7252903e-09
+		 0 0 3.7252903e-09 0 0 0.057057716 0 0 0.097768739 0 0 3.7252903e-09 0 0 3.7252903e-09
+		 0 0 0.097768739 0 0 0.11200595 0 0 3.7252903e-09 0 0 3.7252903e-09 0 0 0.11200595
+		 0 0 0.11200595 0 0 3.7252903e-09 0 0 3.7252903e-09 0 0 0.11200595 0 0 0.097768739
+		 0 0 3.7252903e-09 0 0 3.7252903e-09 0 0 0.097768739 0 0 0.057057716 0 0 3.7252903e-09
+		 0 0 3.7252903e-09 0 0 0.057057716 0;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -186,13 +252,18 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
-connectAttr "polyCube1.out" "pCubeShape1.i";
+connectAttr "polySplitRing2.out" "pCubeShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr "polyCube1.out" "polySplitRing1.ip";
+connectAttr "pCubeShape1.wm" "polySplitRing1.mp";
+connectAttr "polyTweak1.out" "polySplitRing2.ip";
+connectAttr "pCubeShape1.wm" "polySplitRing2.mp";
+connectAttr "polySplitRing1.out" "polyTweak1.ip";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of Trailer.ma
