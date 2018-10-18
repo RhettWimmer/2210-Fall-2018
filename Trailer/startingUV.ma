@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
-//Name: trailerudate.ma
-//Last modified: Thu, Oct 18, 2018 12:11:48 AM
+//Name: startingUV.ma
+//Last modified: Thu, Oct 18, 2018 12:12:36 AM
 //Codeset: 1252
 requires maya "2018ff09";
 requires "stereoCamera" "10.0";
@@ -41124,4 +41124,4 @@ connectAttr "groupId11.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId13.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId15.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId16.msg" ":initialShadingGroup.gn" -na;
-// End of trailerudate.ma
+// End of startingUV.ma
