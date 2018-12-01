@@ -1,0 +1,52 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Subsurface Scattering Parameters": {
+                    "sssColor": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "sssEnabled": true,
+                    "sssScale": 0.5,
+                    "sssType": 1
+                }
+            },
+            "shader": "pbr-metal-rough",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "BigLand": {
+            "shader": "Main shader"
+        },
+        "Meat": {
+            "shader": "Main shader"
+        },
+        "SnowClose": {
+            "shader": "Main shader"
+        },
+        "Trees": {
+            "shader": "Main shader"
+        },
+        "lambert1": {
+            "shader": "Main shader"
+        }
+    }
+}
